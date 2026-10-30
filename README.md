@@ -12,7 +12,7 @@
 git clone --depth 1 https://github.com/Reckpi/ai_work_kit.git /tmp/kit && bash /tmp/kit/setup.sh
 ```
 
-`setup.sh`가 복사·임시폴더 삭제·커밋까지 한다. 과제 README가 하위 폴더에 있으면 `bash /tmp/kit/setup.sh ~/workspace/<폴더>`.
+`setup.sh`가 복사·임시폴더 삭제·커밋까지 한다. 기본 대상은 홈(~). README가 하위 폴더에 있으면 `bash /tmp/kit/setup.sh ~/<폴더>`.
 끝나면 `ls -a`에 `.agents .codex AGENTS.md app tests`가 보여야 한다. 그 다음 `codex` → `/status` → `/model`.
 
 수동 버전(스크립트가 안 될 때):

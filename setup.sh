@@ -3,9 +3,9 @@
 # 과제 README.md가 있는 폴더(기본 ~/workspace)에 템플릿·스킬·스타터를 복사하고 커밋한다.
 set -e
 KIT="$(cd "$(dirname "$0")" && pwd)"
-DEST="${1:-$HOME/workspace}"
+DEST="${1:-$HOME}"
 
-cd "$DEST" || { echo "작업 폴더 없음: $DEST  (예: bash /tmp/kit/setup.sh ~/workspace/project)"; exit 1; }
+cd "$DEST" || { echo "작업 폴더 없음: $DEST  (예: bash /tmp/kit/setup.sh ~ 또는 bash /tmp/kit/setup.sh ~/프로젝트폴더)"; exit 1; }
 [ -f README.md ] || echo "주의: 여기에 README.md가 없음. 과제 루트가 맞는지 확인 ($DEST)"
 
 # 문서·규칙 (과제 README.md는 건드리지 않음)
